@@ -255,16 +255,16 @@
 		    titleLayer.contentsScale = [[UIScreen mainScreen] scale];
 		    [self.scrollView.layer addSublayer:titleLayer];
 
-		    rect.size.height = self.frame.size.height;
-		    rect.origin.y = 0;
-
-		    CAShapeLayer *strokeLayer = [CAShapeLayer layer];
-		    strokeLayer.frame = rect;
-
-		    strokeLayer.borderWidth = 0.5f;
-		    strokeLayer.borderColor = [UIColor colorWithRed:206.0 / 255.0 green:206.0 / 255.0 blue:206.0 / 255.0 alpha:1].CGColor;
-
-		    [self.scrollView.layer addSublayer:strokeLayer];
+//		    rect.size.height = self.frame.size.height;
+//		    rect.origin.y = 0;
+//
+//		    CAShapeLayer *strokeLayer = [CAShapeLayer layer];
+//		    strokeLayer.frame = rect;
+//
+//		    strokeLayer.borderWidth = 0.5f;
+//		    strokeLayer.borderColor = [UIColor colorWithRed:206.0 / 255.0 green:206.0 / 255.0 blue:206.0 / 255.0 alpha:1].CGColor;
+//
+//		    [self.scrollView.layer addSublayer:strokeLayer];
 		}];
 	}
 	else if (self.type == HMSegmentedControlTypeImages) {
