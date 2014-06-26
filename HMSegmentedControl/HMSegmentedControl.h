@@ -44,6 +44,9 @@ typedef enum {
 @property (nonatomic, strong) NSArray *sectionImages;
 @property (nonatomic, strong) NSArray *sectionSelectedImages;
 
+@property (nonatomic, strong) CALayer *selectionIndicatorStripLayer;
+@property (nonatomic, strong) CALayer *selectionIndicatorBoxLayer;
+
 /*
    Provide a block to be executed when selected index is changed.
 
