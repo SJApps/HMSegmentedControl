@@ -205,8 +205,6 @@
 
 	self.selectionIndicatorStripLayer.backgroundColor = self.selectionIndicatorColor.CGColor;
 
-	self.selectionIndicatorBoxLayer.backgroundColor = self.selectionIndicatorColor.CGColor;
-	self.selectionIndicatorBoxLayer.borderColor = self.selectionIndicatorColor.CGColor;
 
 	// Remove all sublayers to avoid drawing images over existing ones
 	self.scrollView.layer.sublayers = nil;
