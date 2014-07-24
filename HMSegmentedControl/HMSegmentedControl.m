@@ -139,6 +139,7 @@
 	self.backgroundColor = [UIColor whiteColor];
 	self.opaque = NO;
 	self.selectionIndicatorColor = [UIColor colorWithRed:52.0f / 255.0f green:181.0f / 255.0f blue:229.0f / 255.0f alpha:1.0f];
+    self.selectedTextFont = [UIFont fontWithName:@"Avenir" size:15.f];
 
 	self.selectedSegmentIndex = 0;
 	self.segmentEdgeInset = UIEdgeInsetsMake(0, 5, 0, 5);
@@ -245,6 +246,7 @@
 
 		    if (self.selectedSegmentIndex == idx) {
 		        titleLayer.foregroundColor = self.selectedTextColor.CGColor;
+                titleLayer.font = (__bridge CFTypeRef)(self.selectedTextFont.fontName);
 			}
 		    else {
 		        titleLayer.foregroundColor = self.textColor.CGColor;

@@ -89,6 +89,14 @@ typedef enum {
  */
 @property (nonatomic, strong) UIColor *selectionIndicatorColor;
 
+
+/*
+ Font for the selection indicator stripe/box
+ 
+ Default is [UIFont fontWithName:@"Avenir" size:15.f];
+ */
+@property (nonatomic, strong) UIFont *selectedTextFont;
+
 /*
    Specifies the style of the control
 
