@@ -267,7 +267,7 @@
 //		    strokeLayer.borderWidth = 0.5f;
 //		    strokeLayer.borderColor = [UIColor colorWithRed:255 / 255.0 green:206.0 / 255.0 blue:255 / 255.0 alpha:1].CGColor;
 
-		    strokeLayer.opacity = 0.2;
+		    strokeLayer.opacity = 0.1;
 		    strokeLayer.borderWidth = 1.0f;
 
 		    if (self.selectedSegmentIndex == idx) {
@@ -401,7 +401,7 @@
 	//		    strokeLayer.borderWidth = 0.5f;
 	//		    strokeLayer.borderColor = [UIColor colorWithRed:255 / 255.0 green:206.0 / 255.0 blue:255 / 255.0 alpha:1].CGColor;
 
-	strokeLayer.opacity = 0.2;
+	strokeLayer.opacity = 0.1;
 	strokeLayer.borderWidth = 1.0f;
 
 
