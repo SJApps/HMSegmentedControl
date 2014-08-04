@@ -379,6 +379,23 @@
 			}
 		}
 	}
+
+
+	CGRect frame = [self frameForFillerSelectionIndicator];
+	frame.size.width = self.frame.size.width;
+	frame.origin.x = 0;
+
+	CALayer *strokeLayer = [CALayer layer];
+	strokeLayer.frame = frame;
+
+	//		    strokeLayer.borderWidth = 0.5f;
+	//		    strokeLayer.borderColor = [UIColor colorWithRed:255 / 255.0 green:206.0 / 255.0 blue:255 / 255.0 alpha:1].CGColor;
+
+	strokeLayer.opacity = 0.2;
+	strokeLayer.borderWidth = 1.0f;
+
+
+	[self.scrollView.layer insertSublayer:strokeLayer atIndex:0];
 }
 
 - (void)setArrowFrame {
